@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusResolve | Sign Up</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-card">
+
+      <h1>CampusResolve</h1>
+      <p class="subtitle">Create an account to report campus issues</p>
+
+      <!-- KEEP IDs FOR FIREBASE -->
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        required
+      >
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+      >
+
+      <button id="signupBtn">
+        Sign Up
+      </button>
+
+      <p class="small-text">
+        Already have an account?
+        <a href="/login.html">Login</a>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Firebase Logic -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

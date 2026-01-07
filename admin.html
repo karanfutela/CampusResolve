@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusResolve | Admin Panel</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav">
+    <h2>CampusResolve — Admin</h2>
+    <button id="logoutBtn">Logout 🔒</button>
+  </nav>
+
+  <!-- Admin Content -->
+  <div class="dashboard-container">
+
+    <h3>All Reported Issues</h3>
+
+    <!-- Filter -->
+    <label for="statusFilter" style="font-weight:600;">
+      Filter by Status
+    </label>
+    <select id="statusFilter" style="margin: 10px 0 20px 0;">
+      <option value="All">All</option>
+      <option value="Pending">Pending</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+
+    <!-- Issues -->
+    <div id="allIssues" class="issues-grid">
+      Loading issues...
+    </div>
+
+  </div>
+
+  <!-- Logic -->
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
