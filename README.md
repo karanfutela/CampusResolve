@@ -57,6 +57,8 @@ CampusResolve provides:
 ---
 
 ## 📁 Project Structure
+
+```text
 ├── index.html
 ├── login.html
 ├── signup.html
@@ -73,10 +75,11 @@ CampusResolve provides:
 ├── assets/
 │   ├── logo.png
 │   ├── login.png
+│   └── (other static images/icons)
 └── README.md
 
+```
 
----
 
 ## 🔮 Future Enhancements
 - AI-based issue categorization
