@@ -194,4 +194,78 @@ select {
   font-weight: 400;
   color: #555;
 }
+/* Logo inside cards (index, login, signup, report) */
+.app-logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 25px auto;
+}
+
+/* Navbar branding */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.nav-logo {
+  width: 48px;
+}
+/* Split layout for login & signup */
+.auth-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left image section */
+.auth-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-image img {
+  width: 70%;
+  max-width: 420px;
+  z-index: 1;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Right form section */
+.auth-form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .auth-page {
+    flex-direction: column;
+  }
+
+  .auth-image {
+    display: none;
+  }
+}
+.auth-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
 

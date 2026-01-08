@@ -4,29 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CampusResolve | Login</title>
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="login-container">
-    <div class="login-card">
-      <h1>CampusResolve</h1>
-      <p class="subtitle">Sign in to manage and submit campus issues</p>
+  <div class="auth-page">
 
-      <!-- KEEP IDs FOR FIREBASE -->
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="password" placeholder="Password" required>
-
-      <button id="loginBtn">Login</button>
-
-      <p class="small-text">
-        New here? <a href="/signup.html">Sign up</a>
-      </p>
+    <!-- LEFT IMAGE -->
+    <div class="auth-image">
+      <img src="assets/login.png" alt="Login illustration">
     </div>
+
+    <!-- RIGHT FORM -->
+    <div class="auth-form">
+      <div class="login-card">
+
+        <!-- LOGO -->
+        <img src="assets/logo.png" alt="CampusResolve Logo" class="app-logo">
+
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Login to continue</p>
+
+        <!-- KEEP IDS -->
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button id="loginBtn">Login</button>
+
+        <p class="small-text">
+          New here?
+          <a href="/signup.html">Sign up</a>
+        </p>
+
+      </div>
+    </div>
+
   </div>
 
-  <!-- KEEP FIREBASE LOGIC -->
+  <!-- Firebase Logic -->
   <script type="module" src="app.js"></script>
 </body>
 </html>
+
