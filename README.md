@@ -70,7 +70,11 @@ CampusResolve provides:
 ├── admin.js
 ├── firebase.js
 ├── firebase.json
+├── assets/
+│   ├── logo.png
+│   ├── login.png
 └── README.md
+
 
 ---
 
